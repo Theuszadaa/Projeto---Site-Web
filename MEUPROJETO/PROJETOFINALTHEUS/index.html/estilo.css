@@ -1,0 +1,79 @@
+/* Fundo e estilo geral */
+body {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #001f3f; /* Azul escuro */
+}
+
+.navbar-brand, .nav-link {
+    color: #1e90ff !important; /* Azul brilhante */
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #00bfff !important; /* Azul mais claro no hover */
+}
+
+/* Cabeçalhos e textos */
+h1, h2 {
+    color: #1e90ff; /* Azul brilhante */
+}
+
+.lead {
+    color: #dcdcdc; /* Cinza claro */
+}
+
+/* Imagens */
+img {
+    border: 2px solid #1e90ff; /* Borda azul nas imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(30, 144, 255, 0.4); /* Sombra azul */
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00bfff;
+    text-decoration: underline;
+}
+
+/* Divider */
+.featurette-divider {
+    border-top: 2px solid #1e90ff;
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p, footer a {
+    color: #dcdcdc;
+}
+
+footer a:hover {
+    color: #1e90ff;
+}
+
+/* Botão "Back to top" */
+.float-end a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.float-end a:hover {
+    color: #00bfff;
+}

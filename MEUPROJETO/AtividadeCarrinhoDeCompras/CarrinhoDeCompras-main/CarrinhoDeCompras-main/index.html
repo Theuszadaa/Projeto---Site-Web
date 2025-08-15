@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheusShop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <span><b> TheusShop</b></span>
+    </header>
+    <main>
+      <div class="page-title">Seu Carrinho</div>
+      <div class="content">
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <th>-</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="pods-removebg-preview.png" alt="" />
+                    <div class="info">
+                      <div class="name">AirPods</div>
+                      <div class="category">Headphones</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="price">2000</td>
+                <td>
+                  <div class="qty">
+                    <button class="minus"><i class="bx bx-minus"></i></button>
+                    <span class="quantity">2</span>
+                    <button class="plus"><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td class="total">4000</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="iphone.png" alt="" />
+                    <div class="info">
+                      <div class="name">IPhone 15</div>
+                      <div class="category">Celular</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="price">6000</td>
+                <td>
+                  <div class="qty">
+                    <button class="minus"><i class="bx bx-minus"></i></button>
+                    <span class="quantity">2</span>
+                    <button class="plus"><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td class="total">12000</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="corintinas-removebg-preview.png" alt="" />
+                    <div class="info">
+                      <div class="name">Camiseta do Corinthians 2024</div>
+                      <div class="category">Camisas</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="price">550</td>
+                <td>
+                  <div class="qty">
+                    <button class="minus"><i class="bx bx-minus"></i></button>
+                    <span class="quantity">2</span>
+                    <button class="plus"><i class="bx bx-plus"></i></button>
+                  </div>
+                </td>
+                <td class="total">1100</td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <aside>
+          <div class="box">
+            <header>Resumo da compra</header>
+            <div class="info">
+              <div><span>Sub-total</span><span id="subtotal">R$ 17100</span></div>
+              <div><span>Frete</span><span>Gratuito</span></div>
+            </div>
+            <footer>
+              <span>Total</span>
+              <span id="total">R$ 17100</span>
+            </footer>
+          </div>
+          <button>Finalizar Compra</button>
+        </aside>
+      </div>
+    </main>
+
+    <script>
+      // Função para atualizar os valores
+      function updateTotals() {
+        let subtotal = 0;
+        document.querySelectorAll("tbody tr").forEach((row) => {
+          const price = parseFloat(row.querySelector(".price").textContent);
+          const quantity = parseInt(row.querySelector(".quantity").textContent);
+          const totalCell = row.querySelector(".total");
+          const total = price * quantity;
+          totalCell.textContent = total;
+          subtotal += total;
+        });
+        document.getElementById("subtotal").textContent = `R$ ${subtotal}`;
+        document.getElementById("total").textContent = `R$ ${subtotal}`;
+      }
+
+      // Adicionar eventos aos botões
+      document.querySelectorAll(".plus").forEach((button) => {
+        button.addEventListener("click", () => {
+          const quantitySpan = button.parentElement.querySelector(".quantity");
+          quantitySpan.textContent = parseInt(quantitySpan.textContent) + 1;
+          updateTotals();
+        });
+      });
+
+      document.querySelectorAll(".minus").forEach((button) => {
+        button.addEventListener("click", () => {
+          const quantitySpan = button.parentElement.querySelector(".quantity");
+          const currentQuantity = parseInt(quantitySpan.textContent);
+          if (currentQuantity > 1) {
+            quantitySpan.textContent = currentQuantity - 1;
+            updateTotals();
+          }
+        });
+      });
+
+      document.querySelectorAll(".remove").forEach((button) => {
+        button.addEventListener("click", () => {
+          const row = button.closest("tr");
+          row.remove();
+          updateTotals();
+        });
+      });
+
+      // Atualizar os totais na carga inicial
+      updateTotals();
+    </script>
+  </body>
+</html>

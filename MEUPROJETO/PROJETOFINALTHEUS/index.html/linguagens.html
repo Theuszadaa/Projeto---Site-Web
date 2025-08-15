@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="linguagens.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Linguagens - Matheus Matos</title>
+
+    <style>
+        /* Reset */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .profile-container {
+            margin-top: 30px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00ffff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Content */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2, h3 {
+            color: #00ffff;
+        }
+
+        p {
+            color: #ddd;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 480px;
+            height: 480px; /* Quadrado */
+            border: 3px solid #00ffff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="mágica.html">Início</a></li>
+            <li><a href="matematica.html">Matemática</a></li>
+            <li><a href="linguagens.html">Linguagens</a></li>
+            <li><a href="ciencias_humanas.html">Ciências Humanas</a></li>
+            <li><a href="ciencias_natureza.html">Ciências da Natureza</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="TI.html">TI</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>MATHEUS MATOS COMPANY.</h1>
+        <div class="profile-container">
+            <img src="Imagens/Perfil.jpg" alt="Matheus Matos" class="profile-image">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1>Conteúdo Educativo - Ensino Médio</h1>
+
+        <!-- 1º Ano -->
+        <section>
+            <h2>1º Ano</h2>
+            <div class="video-container">
+                <h3>Cubismo - Artes</h3>
+                <p>O Cubismo é um movimento artístico do início do século XX, criado por Pablo Picasso e Georges Braque. Ele revolucionou a arte moderna, fragmentando objetos em formas geométricas e apresentando múltiplas perspectivas.</p>
+                <iframe src="https://www.youtube.com/embed/qHf10HGny60" title="Cubismo - Artes" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 2º Ano -->
+        <section>
+            <h2>2º Ano</h2>
+            <div class="video-container">
+                <h3>Figuras de Linguagem - Português</h3>
+                <p>As figuras de linguagem enriquecem a comunicação. Exemplos incluem metáfora, metonímia, antítese e eufemismo, que tornam a linguagem mais expressiva e criativa.</p>
+                <iframe src="https://www.youtube.com/embed/n0e75nRstcU" title="Figuras de Linguagem" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- 3º Ano -->
+        <section>
+            <h2>3º Ano</h2>
+            <div class="video-container">
+                <h3>Esportes e Jogos de Invasão - Educação Física</h3>
+                <p>Esses jogos envolvem estratégias coletivas, como futebol e basquete, com foco em conquistar território adversário e marcar pontos.</p>
+                <iframe src="https://www.youtube.com/embed/J11nST5GXic" title="Esportes e Jogos de Invasão" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Matheus Matos. Todos os direitos reservados.</p>
+        <p><a href="#">Back to top</a></p>
+    </footer>
+
+</body>
+
+</html>

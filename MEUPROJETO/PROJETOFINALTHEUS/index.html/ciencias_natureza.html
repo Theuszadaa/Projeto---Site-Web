@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CN.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Ciências da Natureza - Matheus Matos</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #00ffff;
+        }
+
+        .profile-container {
+            margin-top: 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00ffff;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #00ffff;
+            text-align: center;
+        }
+
+        .content-box {
+            background-color: #111;
+            border: 1px solid #00ffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .content-box h3 {
+            font-size: 1.5rem;
+            color: #00ffff;
+            margin-bottom: 10px;
+        }
+
+        .content-box p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin: 0 auto;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            color: #00ffff;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <ul>
+        <li><a href="mágica.html">Início</a></li>
+        <li><a href="matematica.html">Matemática</a></li>
+        <li><a href="linguagens.html">Linguagens</a></li>
+        <li><a href="ciencias_humanas.html">Ciências Humanas</a></li>
+        <li><a href="ciencias_natureza.html">Ciências da Natureza</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+        <li><a href="TI.html">TI</a></li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<header>
+    <h1>CIÊNCIAS DA NATUREZA</h1>
+    <div class="profile-container">
+        <img src="Imagens/Perfil.jpg" alt="Matheus Matos" class="profile-image">
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <section>
+        <h2>Conteúdo Educativo - Ensino Médio</h2>
+
+        <!-- 1º Ano -->
+        <div class="content-box">
+            <h3>1º Ano: Ligações Covalentes - Química</h3>
+            <p>A ligação covalente acontece quando átomos compartilham elétrons para ficarem estáveis. É comum entre não metais, como na molécula de água (H₂O), onde o oxigênio e os hidrogênios compartilham elétrons.</p>
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/uMrI_mHi2NI" title="Ligações Covalentes"></iframe>
+            </div>
+        </div>
+
+        <!-- 2º Ano -->
+        <div class="content-box">
+            <h3>2º Ano: Energias - Física</h3>
+            <p>Energia cinética é a energia do movimento, como um carro em movimento. Energia potencial é a energia armazenada, como uma bola no topo de uma colina. Trabalho ocorre quando uma força faz um objeto se mover, como empurrar um carrinho.</p>
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/3ESkxyY9qio" title="Energias"></iframe>
+            </div>
+        </div>
+
+        <!-- 3º Ano -->
+        <div class="content-box">
+            <h3>3º Ano: Reino Animal - Biologia</h3>
+            <p>O estudo do Reino Animal no 3º ano consolida conhecimentos e prepara os alunos para exames finais, revisando conceitos básicos e aprofundando tópicos essenciais sobre biodiversidade.</p>
+            <div class="iframe-container">
+                <iframe src="https://www.youtube.com/embed/b1qk7JXNv-4" title="Reino Animal"></iframe>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Matheus Matos. Todos os direitos reservados.</p>
+    <p><a href="#">Back to top</a></p>
+</footer>
+
+</body>
+
+</html>

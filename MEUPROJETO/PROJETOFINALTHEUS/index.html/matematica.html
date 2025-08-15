@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Matos Company</title>
+    <style>
+        /* Reset */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 50px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .profile-container {
+            margin-top: 30px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #00ffff;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #111;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        h1, h2, h3 {
+            color: #00ffff;
+        }
+
+        p {
+            color: #ddd;
+        }
+
+        /* Vídeos */
+        .video-section {
+            background-color: #111;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            max-width: 480px;
+            height: 480px;
+            border: 3px solid #00ffff;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .video-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .video-description {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        /* Botões e Links */
+        a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Título de Ano */
+        .year-title {
+            margin-top: 40px;
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="mágica.html">Início</a></li>
+            <li><a href="matematica.html">Matemática</a></li>
+            <li><a href="linguagens.html">Linguagens</a></li>
+            <li><a href="ciencias_humanas.html">Ciências Humanas</a></li>
+            <li><a href="ciencias_natureza.html">Ciências da Natureza</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="TI.html">TI</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>MATHEUS MATOS COMPANY.</h1>
+        <div class="profile-container">
+            <img src="Imagens/Perfil.jpg" alt="Matheus Matos" class="profile-image">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Conteúdo Educativo - Ensino Médio</h1>
+
+        <!-- 1º Ano -->
+        <h2 class="year-title">1º Ano</h2>
+        <section class="video-section">
+            <h2 class="video-title">Funções de 2º grau</h2>
+            <p class="video-description">A ligação covalente acontece quando átomos compartilham elétrons para ficarem estáveis. É comum entre não metais, como na molécula de água (H₂O), onde o oxigênio e os hidrogênios compartilham elétrons.</p>
+            <iframe src="https://www.youtube.com/embed/ZpW9Xb5iyt4" title="FUNÇÃO DO 2º GRAU | FÁCIL E RÁPIDO" allowfullscreen></iframe>
+        </section>
+
+        <!-- 2º Ano -->
+        <h2 class="year-title">2º Ano</h2>
+        <section class="video-section">
+            <h2 class="video-title">Matrizes e vetores</h2>
+            <p class="video-description">Matrizes são tabelas organizadas em linhas e colunas que contêm números ou elementos. Elas são usadas para representar e resolver sistemas de equações lineares, transformações e outras operações matemáticas.</p>
+            <iframe src="https://www.youtube.com/embed/HNpSOOhtqkA" title="Matrizes e vetores" allowfullscreen></iframe>
+        </section>
+
+        <!-- 3º Ano -->
+        <h2 class="year-title">3º Ano</h2>
+        <section class="video-section">
+            <h2 class="video-title">Juros e amortização</h2>
+            <p class="video-description">Juros são o valor pago pelo uso do dinheiro emprestado, calculado sobre o valor principal, podendo ser simples ou composto.</p>
+            <iframe src="https://www.youtube.com/embed/WFN5dxBTMgA" title="Juros e amortização" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Matheus Matos. Todos os direitos reservados.</p>
+        <p><a href="#">Back to top</a></p>
+    </footer>
+
+</body>
+
+</html>
